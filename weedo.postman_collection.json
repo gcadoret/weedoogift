@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "8e9be4e3-ebba-4510-a1ab-3126003a402d",
+		"name": "weedo Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get user balance",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8083/weedoogift/user/1/balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"weedoogift",
+						"user",
+						"1",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user balance 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8083/weedoogift/user/2/balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"weedoogift",
+						"user",
+						"2",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add gift",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":\"100\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8083/weedoogift/company/1/user/1/gift",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"weedoogift",
+						"company",
+						"1",
+						"user",
+						"1",
+						"gift"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add meal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":\"100\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8083/weedoogift/company/1/user/1/meal",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"weedoogift",
+						"company",
+						"1",
+						"user",
+						"1",
+						"meal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
